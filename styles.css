@@ -1,3 +1,4 @@
+/* Existing CSS */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -31,6 +32,7 @@ body {
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s;
+    width: 160px; /* Fixed width for consistency */
 }
 
 .sidebar ul li .button:hover {
@@ -43,6 +45,7 @@ body {
     text-align: center;
 }
 
+/* New CSS */
 .about-header {
     font-size: 3em;
     margin-top: 0;
