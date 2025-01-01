@@ -4,6 +4,8 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
+    flex-direction: row; /* Ensures sidebar and content align horizontally */
+    min-height: 100vh; /* Ensure body takes full height */
 }
 
 .sidebar {
@@ -12,6 +14,7 @@ body {
     padding-top: 20px;
     padding-left: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
+    flex-shrink: 0; /* Prevents sidebar from shrinking */
 }
 
 .sidebar ul {
@@ -32,7 +35,8 @@ body {
     border-radius: 5px;
     text-align: center;
     transition: background-color 0.3s;
-    width: 160px; /* Fixed width for consistency */
+    width: 100%; /* Ensure buttons fill available width */
+    max-width: 160px; /* Optional: limits width to 160px */
 }
 
 .sidebar ul li .button:hover {
@@ -63,4 +67,32 @@ body {
 .about-info {
     font-size: 1.2em;
     margin-top: 20px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    body {
+        flex-direction: column; /* Stacks the sidebar and content on smaller screens */
+    }
+
+    .sidebar {
+        width: 100%;
+        padding-left: 10px;
+        padding-top: 10px;
+    }
+
+    .sidebar ul li .button {
+        width: 90%; /* Button takes more space on smaller screens */
+        max-width: 90%;
+    }
+
+    .about-header {
+        font-size: 2em; /* Smaller header text on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    .about-header {
+        font-size: 1.5em; /* Even smaller font size for very small screens */
+    }
 }
