@@ -40,4 +40,24 @@ body {
 .content {
     padding: 20px;
     flex-grow: 1;
+    text-align: center;
+}
+
+.about-header {
+    font-size: 3em;
+    margin-top: 0;
+}
+
+.about-image {
+    margin: 20px 0;
+}
+
+.about-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+.about-info {
+    font-size: 1.2em;
+    margin-top: 20px;
 }
