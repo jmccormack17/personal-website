@@ -6,13 +6,13 @@ body {
     display: flex;
     flex-direction: row; /* Ensures sidebar and content align horizontally */
     min-height: 100vh; /* Ensure body takes full height */
-    background-color: cadetblue; /* Set the background color to navy */
+    background-color: cadetblue; /* Set the background color to cadetblue */
     color: white; /* Set text color to white for contrast */
 }
 
 .sidebar {
     width: 200px;
-    background-color: cadetblue; /* Set sidebar background color to navy */
+    background-color: cadetblue; /* Set sidebar background color to cadetblue */
     padding-top: 20px;
     padding-left: 20px;
     box-shadow: 2px 0 5px rgba(0,0,0,0.1);
@@ -65,6 +65,13 @@ body {
 /* Right-align paragraphs */
 .content p {
     text-align: right; /* Aligns paragraphs to the right */
+}
+
+/* Center-align images */
+.content img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 /* New CSS */
