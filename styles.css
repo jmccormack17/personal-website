@@ -8,7 +8,6 @@ body {
     min-height: 100vh; /* Ensure body takes full height */
     background-color: navy; /* Set the background color to navy */
     color: white; /* Set text color to white for contrast */
-    text-align: right;
 }
 
 .sidebar {
@@ -41,6 +40,8 @@ body {
     transition: background-color 0.3s;
     width: 100%; /* Ensure buttons fill available width */
     max-width: 160px; /* Optional: limits width to 160px */
+    margin-left: auto; /* Align buttons to the right of their container */
+    margin-right: auto; /* Centers the buttons horizontally */
 }
 
 .sidebar ul li .button:hover {
@@ -50,7 +51,20 @@ body {
 .content {
     padding: 20px;
     flex-grow: 1;
-    text-align: center;
+}
+
+/* Center-align headers and buttons */
+.content h1, .content h2, .content h3 {
+    text-align: center; /* Aligns headers to center */
+}
+
+.content .button {
+    text-align: center; /* Ensures buttons inside content are also center-aligned */
+}
+
+/* Right-align paragraphs */
+.content p {
+    text-align: right; /* Aligns paragraphs to the right */
 }
 
 /* New CSS */
