@@ -8,6 +8,7 @@ body {
     min-height: 100vh; /* Ensure body takes full height */
     background-color: navy; /* Set the background color to navy */
     color: white; /* Set text color to white for contrast */
+    text-align: right;
 }
 
 .sidebar {
