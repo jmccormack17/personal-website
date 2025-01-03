@@ -121,9 +121,9 @@ body {
         font-size: 1.5em; /* Even smaller font size for very small screens */
     }
 }
-/* Standard paragraphs are right-aligned */
+/* Standard paragraphs are left-aligned */
 .content p {
-    text-align: right;
+    text-align: left;
 }
 
 /* Center-align the blog links */
