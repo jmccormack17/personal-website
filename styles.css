@@ -62,9 +62,9 @@ body {
     text-align: center; /* Ensures buttons inside content are also center-aligned */
 }
 
-/* Right-align paragraphs */
+/* Left-align paragraphs */
 .content p {
-    text-align: right; /* Aligns paragraphs to the right */
+    text-align: left; /* Aligns paragraphs to the right */
 }
 
 /* Center-align images */
