@@ -121,3 +121,11 @@ body {
         font-size: 1.5em; /* Even smaller font size for very small screens */
     }
 }
+/* Center-align the blog link */
+.content p {
+    text-align: center; /* Centers the text inside the paragraph */
+}
+
+.content p a {
+    display: inline-block; /* Ensures the link behaves like a block element */
+}
